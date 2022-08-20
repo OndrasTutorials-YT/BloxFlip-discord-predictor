@@ -13,11 +13,11 @@ scraper = cloudscraper.create_scraper(browser={'custom': 'ScraperBot/1.0'})
 async def predict(ctx):
     games = scraper.get("https://rest-bf.blox.land/games/crash").json()
     if ctx.author.id != bot.user.id:
-        await ctx.reply(embed=discord.Embed(description="check ur dms ong ong",
+        await ctx.reply(embed=discord.Embed(description="This message shows when you enter command",
                                             color=0x5ca3ff))
         ok = await ctx.author.send(
             embed=discord.Embed(title="checking api",
-                                description="slow ass bot hold on rq",
+                                description="this shows in ur dms when it dms until api responds",
                                 color=0x5ca3ff))
 
         def lol():
