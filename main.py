@@ -48,6 +48,7 @@ async def predict(ctx):
                 em = discord.Embed(description=desc, color=color)
                 await ok.edit(embed=em)
 
-
-my_secret = os.environ['token']
-bot.run(my_secret)
+bot.run('discord bot token here)
+# -- if ur using replit use this bellow and remove the bot.run above
+# -- my_secret = os.environ['token']
+# -- bot.run(my_secret)
