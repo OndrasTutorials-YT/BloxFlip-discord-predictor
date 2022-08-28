@@ -13,7 +13,7 @@ scraper = cloudscraper.create_scraper(browser={'custom': 'ScraperBot/1.0'})
 async def predict(ctx):
     games = scraper.get("https://rest-bf.blox.land/games/crash").json()
     if ctx.author.id != bot.user.id:
-        await ctx.reply(embed=discord.Embed(description="This message shows when you enter command",
+        await ctx.reply(embed=discord.Embed(description="Check your direct messages! - Rocket Predictor 🚀",
                                             color=0x5ca3ff))
         ok = await ctx.author.send(
             embed=discord.Embed(title="checking api",
